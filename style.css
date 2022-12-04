@@ -14,9 +14,12 @@
 	--text-color: #000;
 	--secound-color: #a09dab;
 	--main-color: #f75023;
-	--big-font: 5rem;
+	/* --big-font: 5rem;
 	--h2-font: 3rem;
-	--p-font: 1.1rem;
+	--p-font: 1.1rem; */
+	--big-font: 8rem;
+	--h2-font: 4.8rem;
+	--p-font: 1.76rem;
 	
 }
 body{
@@ -474,6 +477,30 @@ header.sticky{
 	letter-spacing: 0.1rem;
 }
 
+@media (min-width: 760.1px){
+	#sub-box2:hover {
+		transform: perspective(100rem)
+					rotateX(4.80deg)
+					rotateY(0deg)
+					scale3d(1.05,1.05,1.05);
+	}
+
+	#sub-box3:hover {
+		transform: perspective(100rem)
+					rotateX(4.80deg)
+					rotateY(-10.23deg)
+					scale3d(1.05,1.05,1.05);
+	}
+}
+
+.layer h5{
+	padding: 2rem;
+}
+
+a.sub-box {
+    color: black;
+}
+
 @media (max-width: 1425px){
 	header{
 		padding: 1.6rem 3%;
@@ -492,9 +519,12 @@ header.sticky{
 		transition: .3s;
 	}
 	:root{
-		--big-font: 4rem;
+		/* --big-font: 4rem;
 		--h2-font: 2.3rem;
-		--p-font: 1rem;
+		--p-font: 1rem; */
+		--big-font: 6.4rem;
+		--h2-font: 3.68rem;
+		--p-font: 1.6rem;
 		transition: .3s;
 	}
 }
