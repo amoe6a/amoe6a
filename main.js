@@ -74,52 +74,39 @@ function personalInfoCard () {
 	}
 }
 
-// certs  
-//   const hiddenElements = document.querySelectorAll('.box');
-//   hiddenElements.forEach((el) => observer.observe(el));
-// let swiper = new Swiper('.mySwiper', {
-// 	// Optional parameters
-// 	direction: 'vertical',
-// 	loop: true,
+// certs
+let swiper = new Swiper('.mySwiper', {
+	// Optional parameters
+	direction: 'vertical',
+	loop: true,
+	effect: "cube",
+	grabCursor: true,
+	cubeEffect: {
+	  shadow: true,
+	  slideShadows: true,
+	  shadowOffset: 20,
+	  shadowScale: 0.94,
+	},
   
-// 	// If we need pagination
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-//    		hide: true,
-// 	},
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+   		hide: true,
+	},
   
-// 	// Navigation arrows
-// 	navigation: {
-// 	  nextEl: '.swiper-button-next',
-// 	  prevEl: '.swiper-button-prev',
-// 	},
-  
-// 	// And if we need scrollbar
-// 	scrollbar: {
-// 	  el: '.swiper-scrollbar',
-// 	  hide: true,
-// 	},
-// });
-
-//  Initialize Swiper
-let swiper = new Swiper(".mySwiper", {
-	spaceBetween: 10,
-	slidesPerView: 4,
-	freeMode: true,
-	watchSlidesProgress: true,
-   });
-   
-   
-   let swiper2 = new Swiper(".mySwiper2", {
-	spaceBetween: 10,
+	// Navigation arrows
 	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
 	},
-	thumbs: {
-	  swiper: swiper,
+  
+	// And if we need scrollbar
+	scrollbar: {
+	  el: '.swiper-scrollbar',
+	  hide: true,
 	},
+	
 });
 
 

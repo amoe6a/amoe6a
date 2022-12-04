@@ -10,7 +10,7 @@
 }
 :root{
 	/* --font-size: 62.5%; */
-	--bg-color: #ffffff;
+	--bg-color: #fbfbfe;
 	--text-color: #000;
 	--secound-color: #a09dab;
 	--main-color: #f75023;
@@ -103,7 +103,7 @@ section{
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
-	background: url(../img/background.jpg);
+	background: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -125,6 +125,7 @@ section{
 }
 span{
 	color: var(--main-color);
+	font-size: 1.6rem;
 }
 .home-text h3{
 	color: var(--main-color);
@@ -433,7 +434,7 @@ header.sticky{
 	justify-content: center;
 	text-align: center;
 	border-radius: 1.2rem;
-	background-image: url(../img/intro.png);
+	background-image: url(../images/intro.png);
 	background-size: cover;
 }
 .center h3{
@@ -458,6 +459,7 @@ header.sticky{
 	outline: none;
 	margin: 0 1.0rem 2.0rem 0;
 	border-radius: 3.0rem;
+	font-size: 1.6rem;
 }
 .contact .action form input[type="submit"] {
 	padding: 1.2rem 4.0rem;
@@ -468,6 +470,7 @@ header.sticky{
 	margin: 0 1.0rem 2.0rem 0;
 	border-radius: 3.0rem;
 	cursor: pointer;
+	font-size: 1.6rem;
 }
 
 .ends{
@@ -503,48 +506,64 @@ a.sub-box {
     color: black;
 }
 
-div.swiper-container {
-	padding-top: 25vh;
+.swiper {
+	right: 1rem;
+	width: 100%;
+	height: 100%;
  }
  
  
  .swiper-slide {
+	text-align: center;
+	 /* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+ }
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+ 
+ 
+ /* .slide_1 {
+	background-color:#643ca3 ;
  }
  
  
- .swiper {
-	width: 480px;
+ .slide_2 {
+	background-color:#e38364 ;
  }
  
  
- .mySwiper2 {
-	width: 480px;
-	height: 320px;
+ .slide_3 {
+	background-color:#faf47a ;
  }
  
  
- .mySwiper {
-	height: 30%;
-	box-sizing: border-box;
-	margin: 10px;
+ .slide_4 {
+	background-color:#64e3c1 ;
  }
  
  
- .mySwiper .swiper-slide {
-	opacity: 0.4;
- }
- 
- 
- .swiper-slide {
-	background-position: center;
- }
- 
- 
- .mySwiper .swiper-slide-thumb-active {
-	opacity: 1;
+ .slide_5 {
+	background-color:#9e6ffd ;
+ } */
+
+.swiper {
+	width: 60rem;
+	height: 40rem;
  }
  
 

@@ -96,7 +96,7 @@ section{
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
-	background: url(../img/background.jpg);
+	background: url(../images/background.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -424,7 +424,7 @@ header.sticky{
 	justify-content: center;
 	text-align: center;
 	border-radius: 12px;
-	background-image: url(../img/intro.png);
+	background-image: url(../images/intro.png);
 	background-size: cover;
 }
 .center h3{
@@ -470,8 +470,7 @@ header.sticky{
 	letter-spacing: 1px;
 }
 
-@media (max-width: 142
-5px){
+@media (max-width: 1425px){
 	header{
 		padding: 16px 3%;
 		transition: .3s;

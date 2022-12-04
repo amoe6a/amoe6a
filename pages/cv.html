@@ -6,10 +6,10 @@
         <title>CV</title>
         <meta name="description" content="cv page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <button class="cvbtn">CV</button>
+        <a id="back-link" class="top-btn" style="margin: 2rem 2rem 2rem 2rem;">Back</a>
         <div id="adobe-dc-view"></div>
         
         <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
@@ -21,6 +21,14 @@
                     metaData:{fileName: "CV file"}
                 }, {defaultViewMode: "FIT_PAGE", showAnnotationTools: false});
             });
+        </script>
+        <script>
+            var element = document.getElementById('back-link');
+            element.setAttribute('href', document.referrer);
+            element.onclick = function() {
+                history.back();
+                return false;
+            }
         </script>
     </body>
 </html>

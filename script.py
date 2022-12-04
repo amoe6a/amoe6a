@@ -8,8 +8,8 @@ def replacer(match):
     num = int(match.group().split('px')[0])
     return str(num / 10) + 'rem'
 
-f = open("./rstyle.css")
-newf = open("./remstyle.css", 'w')
+f = open("./rstyles.css")
+newf = open("./remstyles.css", 'w')
 myreg = re.compile(r'(\d+px)')
 myregRem = re.compile(r'(\w+rem)')
 for line in f:
