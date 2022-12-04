@@ -6,9 +6,10 @@
 	list-style: none;
 	text-decoration: none;
 	scroll-behavior: smooth;
+	font-size: 62.5%;
 }
 :root{
-	--font-size: 62.5%
+	/* --font-size: 62.5%; */
 	--bg-color: #ffffff;
 	--text-color: #000;
 	--secound-color: #a09dab;
