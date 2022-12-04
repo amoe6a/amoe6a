@@ -337,10 +337,11 @@ header.sticky{
 
 .service-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40.0rem, auto));
+	grid-template-columns: repeat(auto-fit, minmax(1fr, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
+	grid-auto-rows: 1fr;
 }
 .row{
 	background: #ffffff;
@@ -352,20 +353,21 @@ header.sticky{
 }
 .s img{
 	height: 6.5rem;
-	width: 6.5rem;
-	background: #f75124;
+	/* width: 6.5rem; */
+	width: auto;
+	background: transparent;
 	padding: 1.5rem;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	margin-bottom: 2.0rem;
 }
 .s.s-tow img{
-	background: #baebcd;
+	background: transparent;;
 }
 .s.s-three img{
-	background: #d9d1fa;
+	background: transparent;
 }
 .s.s-four img{
-	background: #faedce;
+	background: transparent;
 }
 .row h3{
 	font-size: 2.4rem;
@@ -500,6 +502,51 @@ header.sticky{
 a.sub-box {
     color: black;
 }
+
+div.swiper-container {
+	padding-top: 25vh;
+ }
+ 
+ 
+ .swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ 
+ 
+ .swiper {
+	width: 480px;
+ }
+ 
+ 
+ .mySwiper2 {
+	width: 480px;
+	height: 320px;
+ }
+ 
+ 
+ .mySwiper {
+	height: 30%;
+	box-sizing: border-box;
+	margin: 10px;
+ }
+ 
+ 
+ .mySwiper .swiper-slide {
+	opacity: 0.4;
+ }
+ 
+ 
+ .swiper-slide {
+	background-position: center;
+ }
+ 
+ 
+ .mySwiper .swiper-slide-thumb-active {
+	opacity: 1;
+ }
+ 
 
 @media (max-width: 1425px){
 	header{

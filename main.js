@@ -64,6 +64,65 @@ const sr = ScrollReveal ({
 	reset: true
 })
 
+// sweet support
+function personalInfoCard () {
+	let card = document.getElementsByClassName('card')[0];
+	if(card.classList.contains('activeCard')) {
+	  card.classList.remove('activeCard');
+	} else {
+	  card.classList.add('activeCard');
+	}
+}
+
+// certs  
+//   const hiddenElements = document.querySelectorAll('.box');
+//   hiddenElements.forEach((el) => observer.observe(el));
+// let swiper = new Swiper('.mySwiper', {
+// 	// Optional parameters
+// 	direction: 'vertical',
+// 	loop: true,
+  
+// 	// If we need pagination
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 		clickable: true,
+//    		hide: true,
+// 	},
+  
+// 	// Navigation arrows
+// 	navigation: {
+// 	  nextEl: '.swiper-button-next',
+// 	  prevEl: '.swiper-button-prev',
+// 	},
+  
+// 	// And if we need scrollbar
+// 	scrollbar: {
+// 	  el: '.swiper-scrollbar',
+// 	  hide: true,
+// 	},
+// });
+
+//  Initialize Swiper
+let swiper = new Swiper(".mySwiper", {
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesProgress: true,
+   });
+   
+   
+   let swiper2 = new Swiper(".mySwiper2", {
+	spaceBetween: 10,
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	thumbs: {
+	  swiper: swiper,
+	},
+});
+
+
 sr.reveal('.home-text',{delay:350, origin:'left'})
 sr.reveal('.home-img',{delay:350, origin:'right'})
 
