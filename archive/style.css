@@ -8,7 +8,6 @@
 	scroll-behavior: smooth;
 }
 :root{
-	--font-size: 62.5%
 	--bg-color: #ffffff;
 	--text-color: #000;
 	--secound-color: #a09dab;
@@ -16,12 +15,10 @@
 	--big-font: 5rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
-	
 }
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
-	/* font-size: 62.5%; */
 }
 header{
 	position: fixed;
@@ -33,12 +30,12 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: transparent;
-	padding: 3.0rem 18%;
+	padding: 30px 18%;
 	transition: .3s;
 }
 .logo img{
 	max-width: 100%;
-	width: 10.0rem;
+	width: 100px;
 	height: auto;
 }
 .navlist{
@@ -51,15 +48,15 @@ header{
 	font-size: var(--p-font);
 	color: var(--text-color);
 	font-weight: 500;
-	padding: 1.0rem 2.7rem;
+	padding: 10px 27px;
 }
 .navlist a::after{
 	content: '';
 	position: absolute;
 	width: 0;
-	height: 0.2rem;
+	height: 2px;
 	background: var(--main-color);
-	bottom: -0.3rem;
+	bottom: -3px;
 	left: 0;
 	transition: ease .40s;
 }
@@ -67,7 +64,7 @@ header{
 	width: 100%;
 }
 #menu-icon{
-	font-size: 3.5rem;
+	font-size: 35px;
 	color: var(--text-color);
 	z-index: 10001;
 	cursor: pointer;
@@ -75,12 +72,12 @@ header{
 }
 .top-btn{
 	display: inline-block;
-	padding: 0.9rem 3.0rem;
+	padding: 9px 30px;
 	background: transparent;
-	border: 0.2rem solid var(--main-color);
-	border-radius: 3.0rem;
+	border: 2px solid var(--main-color);
+	border-radius: 30px;
 	color: var(--text-color);
-	letter-spacing: 0.1rem;
+	letter-spacing: 1px;
 	font-size: var(--p-font);
 	font-weight: 500;
 	transition: ease .50s;
@@ -88,12 +85,12 @@ header{
 .top-btn:hover{
 	transform: scale(1.1);
 	background: var(--main-color);
-	border: 0.2rem solid var(--main-color);
+	border: 2px solid var(--main-color);
 	color: var(--bg-color);
 }
 
 section{
-	padding: 10.0rem 18%;
+	padding: 100px 18%;
 }
 .home{
 	min-height: 100vh;
@@ -109,14 +106,14 @@ section{
 	grid-gap: 4rem;
 }
 .home-text h1{
-	margin: 1.0rem 0.0rem 2.5rem;
+	margin: 10px 0px 25px;
 	font-size: var(--big-font);
 	line-height: 1;
 	font-weight: 500;
 }
 .home-text h5{
-	margin-bottom: 2.3rem;
-	font-size: 1.9rem;
+	margin-bottom: 23px;
+	font-size: 19px;
 	font-weight: 500;
 }
 span{
@@ -124,27 +121,27 @@ span{
 }
 .home-text h3{
 	color: var(--main-color);
-	font-size: 2.0rem;
+	font-size: 20px;
 	font-weight: 500;
 }
 .home-text p{
 	font-size: var(--p-font);
 	color: var(--secound-color);
-	line-height: 2.8rem;
-	margin-bottom: 2.0rem;
+	line-height: 28px;
+	margin-bottom: 20px;
 }
 .social a{
-	width: 3.5rem;
-	height: 3.5rem;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	background: rgba(128,103,240,1);
-	font-size: 1.7rem;
+	font-size: 17px;
 	color: var(--bg-color);
-	margin-right: 2.2rem;
-	margin-bottom: 3.0rem;
+	margin-right: 22px;
+	margin-bottom: 30px;
 }
 .social a:hover{
 	transform: scale(1.1);
@@ -156,10 +153,10 @@ span{
 	color: var(--bg-color);
 	background: var(--main-color);
 	font-size: var(--p-font);
-	padding: 1.0rem 4.0rem;
+	padding: 10px 40px;
 	font-weight: 500;
-	line-height: 2.4rem;
-	border-radius: 3.0rem;
+	line-height: 24px;
+	border-radius: 30px;
 	transition: ease .40s;
 }
 .btn:hover{
@@ -167,7 +164,7 @@ span{
 }
 .home-img img{
 	max-width: 100%;
-	width: 54.0rem;
+	width: 540px;
 	height: auto;
 	/* border-radius: 50%; */
 	-webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
@@ -175,44 +172,44 @@ span{
 }
 header.sticky{
 	background: var(--bg-color);
-	padding: 1.3rem 18%;
-	box-shadow: 0.0rem 0.0rem 1.0rem rgb(0 0 0 / 10%);
+	padding: 13px 18%;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
 .items{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(22.0rem, auto));
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
 }
 .sub-box{
-	padding: 4.5rem 4.5rem 4.5rem 4.5rem;
+	padding: 45px 45px 45px 45px;
 	transition: ease .50s;
 	cursor: pointer;
 }
 .sub-img img{
 	max-width: 100%;
-	width: 6.0rem;
+	width: 60px;
 	height: auto;
-	margin-bottom: 2.0rem;
+	margin-bottom: 20px;
 }
 .sub-box h3{
-	margin-bottom: 2.0rem;
-	font-size: 2.4rem;
+	margin-bottom: 20px;
+	font-size: 24px;
 	font-weight: 500;
 }
 .sub-box p{
 	font-size: var(--p-font);
 	color: var(--secound-color);
-	line-height: 2.9rem;
+	line-height: 29px;
 }
 .sub-box:hover{
 	background: #ffffff;
-	box-shadow: 1.8rem 0.0rem 8.7rem 0.0rem rgb(10 15 70 / 7%);
-	border-radius: 1.2rem;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	border-radius: 12px;
 	will-change: transform;
-	transform: perspective(100.0rem) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
 }
 
 .about{
@@ -223,27 +220,27 @@ header.sticky{
 }
 .about-img img{
 	max-width: 100%;
-	width: 45.0rem;
+	width: 450px;
 	height: auto;
 	border-radius: 50%;
 }
 .about-text h2{
 	font-size: var(--h2-font);
 	font-weight: 500;
-	margin: 0.8rem 0.0rem 2.5rem;
+	margin: 8px 0px 25px;
 	line-height: 1.1;
 }
 .about-text h3{
 	color: var(--main-color);
-	font-size: 2.0rem;
+	font-size: 20px;
 	font-weight: 500;
 }
 .about-text p{
-	max-width: 55.0rem;
+	max-width: 550px;
 	font-size: var(--p-font);
 	color: var(--secound-color);
-	line-height: 2.8rem;
-	margin-bottom: 4.5rem;
+	line-height: 28px;
+	margin-bottom: 45px;
 }
 
 .heading{
@@ -252,22 +249,22 @@ header.sticky{
 .heading h2{
 	font-size: var(--h2-font);
 	font-weight: 500;
-	margin: 0.7rem 0.0rem 2.0rem;
+	margin: 7px 0px 20px;
 	line-height: 1.1;
 }
 .heading h3{
 	color: var(--main-color);
-	font-size: 2.0rem;
+	font-size: 20px;
 	font-weight: 500;
 }
 .heading p{
 	font-size: var(--p-font);
 	color: var(--secound-color);
-	line-height: 2.8rem;
+	line-height: 28px;
 }
 .portfolio-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(35.0rem, auto));
+	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
@@ -279,10 +276,10 @@ header.sticky{
 }
 .col img{
 	max-width: 100%;
-	width: 55.0rem;
+	width: 550px;
 	height: auto;
 	object-fit: cover;
-	border-radius: 1.2rem;
+	border-radius: 12px;
 }
 .layer{
 	background: transparent;
@@ -291,7 +288,7 @@ header.sticky{
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 1.2rem;
+	border-radius: 12px;
 	transition: all .40s;
 }
 .layer:hover{
@@ -300,7 +297,7 @@ header.sticky{
 .layer h3{
 	position: absolute;
 	width: 100%;
-	font-size: 2.5rem;
+	font-size: 25px;
 	font-weight: 500;
 	color: var(--bg-color);
 	bottom: 0;
@@ -317,7 +314,7 @@ header.sticky{
 .layer h5{
 	position: absolute;
 	width: 100%;
-	font-size:1.7rem;
+	font-size:17px;
 	font-weight: 500;
 	color: var(--bg-color);
 	bottom: 0;
@@ -333,26 +330,26 @@ header.sticky{
 
 .service-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(40.0rem, auto));
+	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
 }
 .row{
 	background: #ffffff;
-	box-shadow: 1.8rem 0.0rem 8.7rem 0.0rem rgb(10 15 70 / 7%);
-	border-radius: 1.2rem;
-	padding: 4.5rem 4.5rem 4.5rem 4.5rem;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	border-radius: 12px;
+	padding: 45px 45px 45px 45px;
 	transition: ease .45s;
 	cursor: pointer;
 }
 .s img{
-	height: 6.5rem;
-	width: 6.5rem;
+	height: 65px;
+	width: 65px;
 	background: #f75124;
-	padding: 1.5rem;
+	padding: 15px;
 	border-radius: 50%;
-	margin-bottom: 2.0rem;
+	margin-bottom: 20px;
 }
 .s.s-tow img{
 	background: #baebcd;
@@ -364,28 +361,28 @@ header.sticky{
 	background: #faedce;
 }
 .row h3{
-	font-size: 2.4rem;
+	font-size: 24px;
 	font-weight: 500;
-	margin-bottom: 0.2rem;
+	margin-bottom: 2px;
 }
 .row h5{
-	font-size: 1.7rem;
+	font-size: 17px;
 	font-weight: 500;
-	margin-bottom: 1.9rem;
+	margin-bottom: 19px;
 }
 .row p{
 	font-size: var(--p-font);
 	color: var(--secound-color);
-	line-height: 2.8rem;
+	line-height: 28px;
 }
 .row:hover{
 	will-change: transform;
-	transform: perspective(100.0rem) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
 }
 
 .cta-box{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(22.0rem, auto));
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	margin-top: 5rem;
@@ -393,9 +390,9 @@ header.sticky{
 }
 .wrap{
 	background: #ffffff;
-	box-shadow: 1.8rem 0.0rem 8.7rem 0.0rem rgb(10 15 70 / 7%);
-	border-radius: 1.2rem;
-	padding: 5.0rem 5.0rem 5.0rem 5.0rem;
+	box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+	border-radius: 12px;
+	padding: 50px 50px 50px 50px;
 	transition: ease .40s;
 	cursor: pointer;
 }
@@ -409,9 +406,9 @@ header.sticky{
 	background: #faedce;
 }
 .wrap h3{
-	font-size: 2.4rem;
+	font-size: 24px;
 	font-weight: 500;
-	margin-bottom: 0.2rem;
+	margin-bottom: 2px;
 }
 .wrap p{
 	font-size: var(--p-font);
@@ -420,70 +417,71 @@ header.sticky{
 .contact{
 	background: #8067f0eb;
 	width: 64%;
-	margin: 10.0rem auto;
-	padding: 7.0rem 15.0rem;
+	margin: 100px auto;
+	padding: 70px 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	border-radius: 1.2rem;
+	border-radius: 12px;
 	background-image: url(../img/intro.png);
 	background-size: cover;
 }
 .center h3{
-	font-size: 3.0rem;
+	font-size: 30px;
 	font-weight: 500;
-	margin-bottom: 0.3rem;
+	margin-bottom: 3px;
 	color: var(--bg-color);
 }
 .center p{
 	font-size: var(--p-font);
 	color: var(--bg-color);
-	line-height: 2.6rem;
-	margin-bottom: 2.5rem;
+	line-height: 26px;
+	margin-bottom: 25px;
 }
 .contact .action form input[type="email"] {
 	max-width: 100%;
-	width: 47.0rem;
-	padding: 1.2rem 1.5rem;
+	width: 470px;
+	padding: 12px 15px;
 	background: var(--bg-color);
 	color: var(--text-color);
 	border: none;
 	outline: none;
-	margin: 0 1.0rem 2.0rem 0;
-	border-radius: 3.0rem;
+	margin: 0 10px 20px 0;
+	border-radius: 30px;
 }
 .contact .action form input[type="submit"] {
-	padding: 1.2rem 4.0rem;
+	padding: 12px 40px;
 	background: var(--main-color);
 	color: var(--bg-color);
 	border: none;
 	outline: none;
-	margin: 0 1.0rem 2.0rem 0;
-	border-radius: 3.0rem;
+	margin: 0 10px 20px 0;
+	border-radius: 30px;
 	cursor: pointer;
 }
 
 .ends{
 	text-align: center;
-	padding: 4.0rem;
+	padding: 40px;
 }
 .ends p{
 	font-size: var(--p-font);
-	letter-spacing: 0.1rem;
+	letter-spacing: 1px;
 }
 
-@media (max-width: 1425px){
+@media (max-width: 142
+5px){
 	header{
-		padding: 1.6rem 3%;
+		padding: 16px 3%;
 		transition: .3s;
 	}
 	header.sticky{
-		padding: 1.0rem 3%;
+		padding: 10px 3%;
 		transition: .3s;
 	}
 	section{
-		padding: 7.0rem 3%;
+		padding: 70px 3%;
 		transition: .3s;
 	}
 	.contact{
@@ -507,7 +505,7 @@ header.sticky{
 	}
 	.navlist{
 		position: absolute;
-		top: -60.0rem;
+		top: -600px;
 		left: 0;
 		right: 0;
 		flex-direction: column;
@@ -519,7 +517,7 @@ header.sticky{
 		display: block;
 		padding: 1.2rem;
 		margin: 1.5rem;
-		border-right: 0.2rem solid var(--bg-color);
+		border-right: 2px solid var(--bg-color);
 		color: var(--bg-color);
 	}
 	.navlist a:hover{
@@ -541,13 +539,13 @@ header.sticky{
 		grid-gap: 1rem;
 	}
 	.home-text{
-		padding-top: 5.5rem;
+		padding-top: 55px;
 	}
 	.home-img{
 		text-align: center;
 	}
 	.home-img img{
-		width: 44.0rem;
+		width: 440px;
 		height: auto;
 	}
 	.about{
@@ -555,19 +553,19 @@ header.sticky{
 	}
 	.about-img{
 		text-align: center;
-		margin-bottom: 3.0rem;
+		margin-bottom: 30px;
 	}
 	:root{
 		--big-font: 3.4rem;
 		--h2-font: 2rem;
 	}
 	section{
-		padding: 6.5rem 3%;
+		padding: 65px 3%;
 		transition: .3s;
 	}
 }
 @media (max-width: 540px){
 	.contact .action form input[type="email"] {
-		width: 31.0rem;
+		width: 310px;
 	}
 }
